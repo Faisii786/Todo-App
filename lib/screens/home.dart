@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_todo_app/SqlLite/dbmanager.dart';
 import 'package:my_todo_app/model/todo_model.dart';
-import 'package:my_todo_app/sqlLite/updateRecord.dart';
+import 'package:my_todo_app/screens/updateRecord.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -138,6 +138,9 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Todo App'),
         elevation: 0.5,
         toolbarHeight: 55,
+        actions: [
+          Icon(Icons.more_vert),
+        ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
@@ -159,7 +162,7 @@ class _HomePageState extends State<HomePage> {
             alignment: Alignment.bottomCenter,
             child: Row(children: [
               Container(
-                width: 260,
+                width: 270,
                 margin: const EdgeInsets.only(
                   bottom: 15,
                   right: 10,

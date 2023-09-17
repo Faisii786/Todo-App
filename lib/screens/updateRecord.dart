@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_todo_app/model/todo_model.dart';
 
-import 'dbmanager.dart';
+import '../SqlLite/dbmanager.dart';
+
 
 class updateTodoRecord extends StatefulWidget {
   final String title;
